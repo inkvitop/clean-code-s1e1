@@ -4,29 +4,19 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
-}
-.aaa img {
-    width: 100%;
-}
-.aaa, 
-.more_inf {
     font-family: fantasy, cursive;
 }
-
-@media (max-width:768px) {
-
-    .aaa { 
-        text-align: center;
-    }
-
+.header-images {
+    width: 100%;
 }
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -55,7 +45,6 @@ button{
     outline: none;
 }
 
-
 button {
     background: none;
     border: 0px;
@@ -68,8 +57,6 @@ button {
 button:hover {
     color: #3a3a3a;
 }
-
-
 
 /* Heading */
 h3,
@@ -164,4 +151,12 @@ ul li.editMode input[type=text] {
 
 ul li.editMode label {
     display: none;
+}
+
+@media (max-width:768px) {
+
+    .aaa { 
+        text-align: center;
+    }
+
 }
