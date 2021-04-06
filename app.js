@@ -49,6 +49,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.className="del-img"
+    deleteButtonImg.alt="delete icon"
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -85,10 +86,10 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
-    editInput.classList.toggle(`edit-mode-input`)
+    var editInput=listItem.querySelector("input[type=text]");
+    editInput.classList.toggle("edit-mode-input")
     var label=listItem.querySelector("label");
-    label.classList.toggle(`edit-mode-label`)
+    label.classList.toggle("edit-mode-label")
     var editBtn=listItem.querySelector(".edit");
     var containsClass=listItem.classList.contains("editMode");
     //If class of the parent is .editmode
