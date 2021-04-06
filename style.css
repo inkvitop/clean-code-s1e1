@@ -125,7 +125,7 @@
 
 
 /* Completed */
-ul#completed-tasks label {
+.complited-label {
     text-decoration: line-through #888;
 }
 

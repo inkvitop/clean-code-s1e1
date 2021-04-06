@@ -83,7 +83,6 @@ var editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
-
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
@@ -127,9 +126,9 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    listItem.children[1].classList.add(`complited-label`)
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
-
 }
 
 
@@ -139,10 +138,10 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.children[1].classList.remove(`complited-label`)
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
-
 
 
 var ajaxRequest=function(){
