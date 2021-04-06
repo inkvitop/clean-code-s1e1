@@ -18,7 +18,7 @@
     list-style: none;
 }
 
-.button {
+.btn {
     outline: none;
     background: none;
     border: 0px;
@@ -28,16 +28,16 @@
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.button:hover {
+.btn:hover {
     color: #3a3a3a;
 }
 
-.delete-img {
+.del-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-.delete-img:hover {
+.del-img:hover {
     transform: rotateZ(0);
 }
 
@@ -101,7 +101,7 @@
     flex-grow: 1;
     width: 318px;
 }
-.new-task-form-button {
+.new-task-form-btn {
     background: none;
     border: 0px;
     color: #888;
@@ -111,7 +111,7 @@
     cursor: pointer;
     outline: none;
 }
-.new-task-form-button:hover {
+.new-task-form-btn:hover {
     color: #0fc57c;
 }
 
